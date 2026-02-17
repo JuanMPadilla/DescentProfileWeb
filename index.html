@@ -1,1 +1,28 @@
+<div id="privacy" class="card">
+  <h2 style="margin:0 0 10px;">Privacy Notice</h2>
 
+  <p style="margin:0 0 10px;">
+    We do not collect, store, sell, or share any personal information.
+  </p>
+
+  <ul style="margin:0; padding-left:18px; opacity:.9; line-height:1.6;">
+    <li>No accounts.</li>
+    <li>No analytics or tracking.</li>
+    <li>No advertising identifiers.</li>
+    <li>No location collection.</li>
+    <li>All calculations run on-device.</li>
+  </ul>
+
+  <p style="margin:12px 0 0; opacity:.75; font-size:14px;">
+    If you contact us by email, we will only use your message to respond to your request.
+  </p>
+
+  <p style="margin:10px 0 0; opacity:.65; font-size:13px;">
+    Last updated: <span id="privacyDate"></span>
+  </p>
+</div>
+
+<script>
+  document.getElementById("privacyDate").textContent =
+    new Date().toISOString().slice(0,10);
+</script>
